@@ -1,0 +1,11 @@
+[providers.node]
+enabled = false
+
+[providers.java]
+enabled = true
+
+[build]
+cmd = "./mvnw -B package -DskipTests"
+
+[deploy]
+startCmd = "java -jar target/*.jar"
